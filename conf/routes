@@ -1,0 +1,18 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                                                        controllers.AsyncHttpClientFutureController.index
+
+GET     /asyncHttpClientFutureController/poke                    controllers.AsyncHttpClientFutureController.poke
+GET     /asyncHttpClientFutureController/post                    controllers.AsyncHttpClientFutureController.post
+
+GET     /httpURLConnectionController/poke                        controllers.HttpURLConnectionController.poke
+GET     /httpURLConnectionController/post                        controllers.HttpURLConnectionController.post
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+      
