@@ -6,11 +6,9 @@ https://sttp.readthedocs.io/
 
 We also show the use of a Tor socks proxy
 
-To run
+## To run
 
 `sbt run`
-
-
 
 GET     /                                                          controllers.AsyncHttpClientFutureController.index
 
@@ -32,8 +30,14 @@ playpen.TryURLConnection
 playpen.sttp.TryHttpURLConnectionBackend
 playpen.sttp.TryAsyncHttpClientFutureBackend
 
+## Tor
 
 By default the socks proxy is not used, look inside application.conf
 
+(localhost/9050 is for the Tor standalone socks proxy, 9150 is you rely on the Tor browser proxy) 
 
-(localhost/1050 is for the Tor standalone socks proxy, 1150 is you rely on the Tor browser proxy) 
+How to install Tor and create Tor hidden service on Windows
+
+https://miloserdov.org/?p=1839
+
+https://www.techwalla.com/articles/how-to-use-tor-proxy
