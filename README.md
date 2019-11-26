@@ -34,7 +34,7 @@ playpen.sttp.TryAsyncHttpClientFutureBackend
 
 By default the socks proxy is not used, look inside application.conf
 
-(localhost/9050 is for the Tor standalone socks proxy, 9150 is you rely on the Tor browser proxy) 
+(localhost/9050 is for the Tor standalone socks proxy, 9150 if you rely on the Tor browser proxy) 
 
 How to install Tor and create Tor hidden service on Windows
 
