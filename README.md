@@ -10,6 +10,12 @@ We also show the use of a Tor socks proxy
 
 `sbt run`
 
+Point your browser at `localhost:9000`
+
+By default the socks proxy is not used, so /poke page will say "proxyEnabled=false" at the top
+
+## Endpoints
+
 GET     /                                                          controllers.AsyncHttpClientFutureController.index
 
 GET     /asyncHttpClientFutureController/poke                      controllers.AsyncHttpClientFutureController.poke
@@ -32,9 +38,12 @@ playpen.sttp.TryAsyncHttpClientFutureBackend
 
 ## Tor
 
-By default the socks proxy is not used, look inside application.conf
+By default the socks proxy is not used, look inside application.conf, and change socksport and proxyEnabled
 
 (localhost/9050 is for the Tor standalone socks proxy, 9150 if you rely on the Tor browser proxy) 
+
+Don't point your browser at localhost:9050 or 9150, or you'll be talking to the Tor Proxy and getting 
+warnings like "this is a SOCKs proxy, not an HTTP proxy"
 
 How to install Tor and create Tor hidden service on Windows
 
